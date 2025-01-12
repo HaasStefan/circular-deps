@@ -1,0 +1,9 @@
+{
+  "generators": {
+    "source-clusters": {
+      "factory": "./src/generators/source-clusters/source-clusters",
+      "schema": "./src/generators/source-clusters/schema.json",
+      "description": "source-clusters generator"
+    }
+  }
+}
