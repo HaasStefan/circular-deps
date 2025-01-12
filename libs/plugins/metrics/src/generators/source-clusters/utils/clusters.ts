@@ -35,28 +35,3 @@ function clusterBranches(branches: string[][]) {
   
   return branches.filter(Boolean);
 }
-
-function clusterBranches2(branches: string[][]) {
-  const clusters: string[][] = [];
-
-  for (const branch of branches) {
-    const cluster = clusters.filter((c) =>
-      c.some((filePath) => branch.includes(filePath))
-    );
-
-    if (cluster.length === 0) {
-      clusters.push(branch);
-    } else if (cluster.length === 1) {
-      clusters.push(branch);
-    } else {
-      const indices = cluster.map((c) => clusters.indexOf(c));
-      const newCluster: string[] = [];
-      for (const index of indices) {
-        newCluster.push(...clusters.splice(index, 1).flat());
-      }
-      clusters.push(newCluster);
-    }
-  }
-
-  return clusters;
-}
