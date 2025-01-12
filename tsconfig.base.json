@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@circular-deps/metrics": ["libs/plugins/metrics/src/index.ts"]
+      "@circular-deps/metrics": ["libs/plugins/metrics/src/index.ts"],
+      "@circular-deps/test-utils": ["libs/test-utils/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

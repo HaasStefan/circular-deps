@@ -15,7 +15,7 @@ export async function sourceClustersGenerator(
   const clusters = clusterSourceTree(sourceTree);
 
   tree.write(
-    `dist/${
+    `dist/metrics/${
       readProjectConfiguration(tree, options.projectName).root
     }/clusters.json`,
     JSON.stringify(clusters, null, 2)

@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/schema",
+  "$id": "LinesOfCode",
+  "title": "",
+  "type": "object",
+  "properties": {
+    "projectName": {
+      "type": "string",
+      "description": "",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "What projectName would you like to use?"
+    },
+    "fileExtensions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "ts",
+          "js",
+          "less",
+          "scss",
+          "css",
+          "json",
+          "html",
+          "tsx",
+          "jsx",
+          "md",
+          "yml",
+          "yaml",
+          "xml",
+          "svg"
+        ]
+      },
+      "description": "Select the file types",
+      "default": [
+        "ts",
+        "js",
+        "less",
+        "scss",
+        "css",
+        "json",
+        "html",
+        "tsx",
+        "jsx"
+      ]
+    }
+  },
+  "required": ["projectName"]
+}

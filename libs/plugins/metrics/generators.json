@@ -4,6 +4,11 @@
       "factory": "./src/generators/source-clusters/source-clusters",
       "schema": "./src/generators/source-clusters/schema.json",
       "description": "source-clusters generator"
+    },
+    "lines-of-code": {
+      "factory": "./src/generators/lines-of-code/lines-of-code",
+      "schema": "./src/generators/lines-of-code/schema.json",
+      "description": "lines-of-code generator"
     }
   }
 }
